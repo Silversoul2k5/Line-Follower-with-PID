@@ -1,5 +1,24 @@
 # Line Follower Robot
 
+# What is PID?
+PID (Proportional–Integral–Derivative) is a control algorithm that allows the robot to follow a line smoothly and accurately.
+Instead of using simple left/right conditions, PID continuously calculates how far the robot is from the center of the line and adjusts motor speeds accordingly.
+
+# How it works:
+P (Proportional): Corrects based on how far the robot is from the line
+I (Integral): Corrects small long-term drift
+D (Derivative): Smooths movement and reduces oscillation
+
+# Why use PID?
+PID makes the robot:
+smoother
+faster
+more stable
+better at corners
+accurate even at high speed
+
+By combining P + I + D, the robot automatically stays centered on the line with balanced left/right motor control.
+
 # Materials Required
 - 4WD or 2WD chassis
 - Arduino-compatible microcontroller (UNO, Nano, Mini, ESP32* with Arduino core, etc.)
@@ -11,7 +30,9 @@
 ## Step 1: Assemble the Chasis and fix the Sensor to the bottom of the Car's front <br> Attach L298N Motor Driver Module and Arduino on the top of the car.
 ### Wiring circuits
 
+
 make sure you check the polarity of motors so that it goes forward.
+
 
 | From     | Pin  | <== Pin Name   | To      | Pin |
 | -------- | ---- | -------------- | ------- | --- |
